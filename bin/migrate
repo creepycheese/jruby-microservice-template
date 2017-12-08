@@ -1,6 +1,6 @@
 #!/usr/bin/env jruby
 require_relative '../config/setup'
-require_relative '../lib/tibco'
+require_relative '../lib/fix'
 
 STDOUT.puts "Migrating"
 Sequel.extension :migration
