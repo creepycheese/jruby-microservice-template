@@ -15,6 +15,10 @@ docker-compose build .
 docker exec -it my_db_container1 psql -U postgres -c 'create database my_db_name;'
 ```
 
+*Start*:
+
+Place your start logic to `bin/start` and `bin/start` :)
+
 
 *Console*:
 
