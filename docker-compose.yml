@@ -1,0 +1,17 @@
+version: '2'
+services:
+  db:
+    image: postgres
+  rabbitmq:
+    image: rabbitmq:3.6.9-management
+    hostname: rmq
+  app:
+    build: .
+    command: './entrypoint.sh'
+    volumes:
+      - .:/app
+    depends_on:
+      - rabbitmq
+      - db
+    links:
+      - rabbitmq

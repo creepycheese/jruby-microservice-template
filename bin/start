@@ -1,0 +1,3 @@
+#!/usr/bin/env jruby
+require_relative '../config/setup'
+require_relative '../lib/fix'

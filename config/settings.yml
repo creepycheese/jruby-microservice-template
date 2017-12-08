@@ -1,0 +1,30 @@
+---
+development:
+  ssl_identity: '/app/config/certs/server.p12'
+  server_url:   'ssl://tibco2.open.ru:7234'
+  user_name:    'Rocket'
+  queue_name:   'Merger.Rocket.Document.Out'
+  certificate:  '/app/config/tibco2.open.ru.fullchain_new.pem'
+
+production:
+  ssl_identity: '/app/config/certs/prod.p12'
+  server_url:   'ssl://app-tibco.open.ru:18222'
+  user_name:    'Rocket'
+  queue_name:   'Prod.Rocket.Document.Out'
+  certificate:  '/app/config/last.cer'
+
+staging:
+  ssl_identity: '/app/config/certs/server.p12'
+  ssl_password: 'tC81V8NXDVp1RxF'
+  server_url:   'ssl://tibco2.open.ru:7243'
+  user_name:    'Rocket'
+  jms_password: 'Rocket+'
+  queue_name:   'Merger.Rocket.Document.Out'
+  certificate:  '/app/config/tibco2.open.ru.fullchain_new.pem'
+
+release:
+  ssl_identity: '/app/config/certs/server.p12'
+  server_url:   'ssl://dcm-esb.open.ru:18222'
+  user_name:    'Rocket'
+  queue_name:   'Release.Rocket.Document.Out'
+  certificate:  '/app/config/pred_prod.cer'

@@ -1,0 +1,5 @@
+---
+development:
+  host: 'rabbitmq'
+test:
+  host: 'rabbitmq'

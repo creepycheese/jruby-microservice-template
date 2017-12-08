@@ -1,0 +1,10 @@
+development:
+  host: db
+  database: ems_tibco
+  user: postgres
+  port: 5432
+test:
+  host: db
+  database: ems_tibco
+  user: postgres
+  port: 5432
